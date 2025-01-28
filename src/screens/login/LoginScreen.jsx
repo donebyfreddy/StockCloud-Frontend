@@ -27,7 +27,7 @@ function LoginScreen() {
 
     try {
       const { data, status } = await axios.post(
-        `https://stock-cloud-backend-private.vercel.app/api/users/login`,
+        `${REACT_APP_API_URL}/api/users/login`,
         lowercasedFormData,
         {
           withCredentials: "include",
