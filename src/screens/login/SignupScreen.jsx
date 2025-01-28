@@ -23,7 +23,7 @@ function SignupScreen() {
     e.preventDefault();
     try {
       const { data, status } = await axios.post(
-        `${REACT_APP_API_URL}/api/users/register`,
+        `https://stock-cloud-backend-private.vercel.app/api/users/register`,
         formData
       );
 
